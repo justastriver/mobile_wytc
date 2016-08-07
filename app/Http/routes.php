@@ -12,7 +12,31 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pc.index')->with('index','home');
+});
+Route::get('/home', function () {
+    return view('pc.index')->with('index','home');
+});
+Route::get('/hotjobs', function () {
+    return view('pc.hotjobs')->with('index','hotjobs');
+});
+Route::get('/corps', function () {
+    return view('pc.corps')->with('index','corps');
+});
+Route::get('/apply', function () {
+    return view('pc.apply')->with('index','apply');
+});
+Route::get('/help', function () {
+    return view('pc.help')->with('index','help');
+});
+Route::get('/contact', function () {
+    return view('pc.contact')->with('index','contact');
+});
+Route::get('/follow', function () {
+    return view('pc.follow')->with('index','follow');
+});
+Route::get('/publish', function () {
+    return view('pc.publish')->with('index','publish');
 });
 
 /*
