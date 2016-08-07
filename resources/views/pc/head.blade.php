@@ -19,7 +19,7 @@
  
  <style type="text/css">
  	.bgimg-ext {
- 		background: url("{{asset('img/backimg4.jpg')}}");
+ 		background: url("{{asset('img/work.jpg')}}");
 
  	}
  	.am-text-ir-ext{
@@ -112,6 +112,7 @@
       font-size: 180%;
       padding: 30px 0 50px 0;
       text-align: center;
+
     }
 
     .footer p {
@@ -127,6 +128,12 @@
       margin: 0 auto;
   		width: 100%;
     }
-    
+  
+  .about-p {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+  }
   </style>
 </head>

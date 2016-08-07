@@ -23,7 +23,8 @@
 
       <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-collapse">
         <ul class="am-nav am-nav-pills am-topbar-nav">
-        @if($index=='corps')
+        
+          @if($index=='corps')
         <li class="am-active">
         @else
           <li>
@@ -35,7 +36,7 @@
           @else
         <li>
         @endif
-            <a href="home">人才</a>
+            <a href="home">求职服务</a>
           </li>
           @if($index=='hotjobs')
           <li class="am-active">
@@ -44,13 +45,7 @@
         @endif
             <a href="hotjobs">高薪职位</a>
           </li>         
-          @if($index=='apply')
-          <li class="am-active">
-          @else
-        <li>
-        @endif
-            <a href="apply">马上跳槽</a>
-          </li>
+          
           @if($index=='help')
           <li class="am-active">
           @else
@@ -63,7 +58,7 @@
           @else
         <li>
         @endif
-            <a href="contact">联系我们</a>
+            <a href="contact">关于我们</a>
           </li>
           @if($index=='follow')
           <li class="am-active">

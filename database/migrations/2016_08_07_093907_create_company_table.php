@@ -13,6 +13,18 @@ class CreateCompanyTable extends Migration
     public function up()
     {
         //
+        Schema::create('company', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password', 60);
+            $table->string('wechatid');
+            $table->string('phone');
+            $table->string('companyName');
+            $table->string('location');
+            $table->rememberToken();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,5 +35,6 @@ class CreateCompanyTable extends Migration
     public function down()
     {
         //
+        Schema::drop('company');
     }
 }

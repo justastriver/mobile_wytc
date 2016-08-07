@@ -28,6 +28,13 @@
     </div>
   </article>
 
+<div class="bg-container" style="text-align: center;">
+  <h2>请扫码下图二维码，关注我们的微信公众号“我要跳槽”，获取最新的职位信息</h2>
+  </br>
+  <img src="{{asset('img/wx.jpg')}}"></div>
+  </br>
+ </div>
+ 
  @include('pc.footer')
 
 </body></html>
