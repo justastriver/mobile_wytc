@@ -10,7 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::group([], function () {
+//pc for router
+Route::group(['prefix'=>"/"], function () {
 	Route::get('/', function () {
 	    return view('pc.index')->with('index','home');
 	});
@@ -43,7 +44,29 @@ Route::group([], function () {
 
 });
 
-
+//mobile
+Route::group(['prefix'=>"m"], function () {
+	Route::get('/', function () {
+	    return view('mobile.home')->with('index','home');
+	});
+	Route::get('hot', function () {
+	    return view('mobile.hot')->with('index','hot');
+	});
+	Route::get('about', function () {
+	    return view('mobile.about')->with('index','about');
+	});
+});
+Route::group(array('domain' => 'm.woyaotiaocao.com'), function()
+{
+	Route::get('/', function()
+	{
+		return view('mobile.index')->with('index','home');
+	});
+	Route::get('user/{id}', function($id)
+	{
+		
+	});
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes
