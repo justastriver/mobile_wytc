@@ -8,14 +8,14 @@
         <div class="am-tabs-bd">
             <div class="am-tab-panel am-active">
                 <form method="post" class="am-form" data-am-validator="true" action="/register?from=user">
-                    <div class="am-u-md-6">
-                        <div class="am-u-md-12 am-form-group">
-                            <div class="am-u-md-3 lablel"><em>*</em>邮箱</div>
-                            <div class="am-u-md-9">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-u-md-12 am-form-group">
+                            <div class="am-u-sm-12 am-u-md-3 lablel"><em>*</em>邮箱</div>
+                            <div class="am-u-sm-12 am-u-md-9">
                                 <input type="email" class="" placeholder="邮箱地址" required="required" name="loginEmail" />
                             </div>
                         </div>
-                        <div class="am-u-md-12 am-form-group">
+                        <div class="am-u-sm-12 am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>昵称</div>
                             <div class="am-u-md-9">
                                 <input type="text" class="" placeholder="昵称" required="required" name="userName" />
@@ -53,6 +53,7 @@
                                 <button id="submit" class="am-btn am-btn-success">申请职位</button>
                             </div>
                         </div>
+                    
                     </div>
                 </form>
                 <div class="am-u-md-6">请留下您的联系方式，我们会尽快与您沟通用人需求</div>

@@ -55,6 +55,10 @@ Route::group(['prefix'=>"m"], function () {
 	Route::get('about', function () {
 	    return view('mobile.about')->with('index','about');
 	});
+	Route::get('regist', function () {
+	    return view('mobile.register')->with('index','register');
+	});
+	Route::post('/register','RegisterController@regist');
 });
 Route::group(array('domain' => 'm.woyaotiaocao.com'), function()
 {

@@ -1,3 +1,11 @@
+<!--
+<header class="am-topbar am-topbar-inverse">
+  <h1 class="am-topbar-brand">
+    <a href="#">Amaze UI</a>
+  </h1>
+
+</header>
+-->
 <!--[if lte IE 9 ]>
   <div class="am-alert am-alert-danger ie-warning" data-am-alert>
     <button type="button" class="am-close">&times;</button>

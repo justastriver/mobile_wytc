@@ -40,7 +40,13 @@ class RegisterController extends Controller
 			return json_decode($message)[0];
 		}
 		*/
-
+		if(!is_null($request->dev)) {
+			
+			Log::info("name=".$request->name);
+			Log::info("phone=".$request->phone);
+			Log::info("wechat=".$request->wechat);
+			return view('mobile.index')->with('index','home');
+		}
     	switch ($request->from) {
     		case 'user':
     			# code...
