@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="am-u-sm-6 am-u-md-12 am-u-lg-12">
-            <div class="am_footer_erweima">
+            <div class="am-u-sm-12">
                 <div class="am_footer_weixin">
                     <img src="{{asset('/img/wx.jpg')}}" alt="">
                     <div class="am_footer_d_gzwx am-icon-weixin">关注微信</div>
