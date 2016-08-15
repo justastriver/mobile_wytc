@@ -1,7 +1,7 @@
 <footer class="am_footer am-center" style="background: #f2f2f2;">
     <hr style="border:1 dashed #987cb9" width="100%" color=#987cb9 size=1>
     <div class="am-g"> 
-        <div class="am-u-sm-5  am-u-md-12 am-u-lg-12">
+        <div class="am-u-sm-6  am-u-md-12 am-u-lg-12">
             <div class="am_footer_con">
                     
                         <span>关于"我要跳槽"</span>
@@ -13,9 +13,9 @@
                     
             </div>
         </div>
-        <div class="am-u-sm-7 am-u-md-12 am-u-lg-12 am-u-sm-center">
-            <div class="am_footer_erweima  am-u-sm-center">
-                <div class="am_footer_weixin  am-u-sm-center">
+        <div class="am-u-sm-6 am-u-md-12 am-u-lg-12">
+            <div class="am_footer_erweima">
+                <div class="am_footer_weixin">
                     <img src="{{asset('/img/wx.jpg')}}" alt="">
                     <div class="am_footer_d_gzwx am-icon-weixin">关注微信</div>
                 </div>
