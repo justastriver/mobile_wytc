@@ -12,6 +12,22 @@ use Validator;
 
 class RegisterController extends Controller
 {
+	public function index(Request $request)
+	{
+		switch ($request->from) {
+			case 'user':
+				# code...
+				return view('mobile.register')->with('index','register')->with('type','user');
+				break;
+			case 'corp':
+				return view('mobile.register')->with('index','register')->with('type','corp');
+				break;
+			default:
+				# code...
+				break;
+		}
+		return view('mobile.register')->with('index','register')->with('type','user');
+	}
     //
     public function regist(Request $request) 
     {

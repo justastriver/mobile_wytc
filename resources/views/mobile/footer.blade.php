@@ -24,7 +24,8 @@
     </div>
     <div class="am-u-sm-12">
         <div class="am_info_line"  style="background: #f2f2f2;">
-            Copyright(c)2014-2016 <span>我要跳槽</span> All Rights Reserved,京ICP备16041682号
+            <p>Copyright(c)2014-2016 <span>我要跳槽</span> All Rights Reserved</p>
+            <p>京ICP备16041682号</p>
         </div>
     </div>
 </footer>

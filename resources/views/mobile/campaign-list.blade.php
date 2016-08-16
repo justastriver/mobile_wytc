@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="css/amazeui.min.css">
-  <link rel="stylesheet" href="css/wap.css">
+  <link rel="stylesheet" href="{{asset('amaze/css/amazeui.min.css')}}">
+  <link rel="stylesheet" href="{{asset('amaze/css/wap.css')}}">
   <title>活动列表页</title>
 </head>
 <body style="background:#ececec">
@@ -151,8 +151,8 @@
         <div class="pet_article_footer_info">Copyright(c)2015 PetShow All Rights Reserved</div>
       </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/amazeui.min.js"></script>
+    <script src="{{asset('amaze/js/jquery.min.js')}}"></script>
+    <script src="{{asset('amaze/js/amazeui.min.js')}}"></script>
     <script>
 $(function(){
 

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{asset('/amaze/css/icons.css')}}">
 </head>
 -->
-@include('pc.head')
+@include('mobile.head')
     <body class="am-with-topbar-fixed-top">
     	<section>
     	<div class="am-u-sm-12" style="background: #000000;" >
@@ -61,7 +61,7 @@
                                 <input type="text" id="wechat" name="wechat" class="am-form-field" placeholder="您的微信号（建议填写，方便我们客服跟您联系）">
                             </div>
                             </br>
-                            @if(!is_null($type) && $type == 'corp')
+                            @if($type == 'corp')
                             <div id="div-corp" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-copyright am-icon-fw"></i></span>
                                 <input type="text" id="corp" name="corp" class="am-form-field" placeholder="企业名称(企业用户选填)">
                             </div>
@@ -75,13 +75,20 @@
                     </div>
                 </div>
                 <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
-                    <div class="am-u-sm-6  am-u-md-6 am-u-lg-6 lablel">
+                    <div class="am-u-sm-4  am-u-md-6 am-u-lg-6 lablel">
                         <input type="hidden" id="userType" value="0" />
                         <input type="hidden" id="userType" name="from" value="user" />
                         <input type="hidden" id="userType" name="device" value="mobile" />
                     </div>
-                    <div class="am-u-sm-6 am-u-md-6 am-u-lg-6">
-                        <button id="submit" class="am-btn am-btn-success">立即申请</button>
+                    <div class="am-u-sm-8 am-u-md-6 am-u-lg-6">
+                    	<div class="am-u-sm-6">
+                        	<button id="submit" class="am-btn am-btn-success">立即申请</button>
+                        </div>
+                        @if($type == 'user')
+							<div class="am-u-sm-6">
+	                        	<button id="button" class="am-btn am-btn-warning"><a href="jobs">先逛逛</a></button>
+	                        </div>
+	                    @endif
                         <hr>
                     </div>
                 </div>
