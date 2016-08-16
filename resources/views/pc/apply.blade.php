@@ -8,7 +8,8 @@
     <!-- banner -->
     <div class="bgimg-normal">
     </div>
-    @include('pc.register') @include('pc.footer')
+    @include('pc.register') 
+    @include('pc.footer')
 </body>
 
 </html>

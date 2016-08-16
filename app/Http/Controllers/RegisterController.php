@@ -16,53 +16,44 @@ class RegisterController extends Controller
     public function regist(Request $request) 
     {
     	Log::info($request);
-    	/*
+    	
     	$validator = Validator::make($request->all(),
 			[
-				'userName'		=> 'required|between:1,12',
-				'phoneNum'		=> 'required|alpha_dash|max:20',
-				'loginEmail' 	=> 'email|between:4,100',
-				'wechatCode'  => 'required|numeric',
+				'name'		=> 'required|between:1,12',
+				'phone'		=> 'required|alpha_dash|max:20',
+				'email' 	=> 'email|between:4,100',
+				'wechat'  => 'required|numeric',
 				
 			],
 			[
-				'userName.required'			=> json_encode(['1', '需要userName名称']),
-				'phoneNum.required'		=> json_encode(['1', '请填写电话']),
-				'phone.alpha_dash'		=> json_encode(['1', '电话格式错误']),
-				'phone.between'			=> json_encode(['1', '电话格式错误']),
-				'loginEmail.email'			=> json_encode(['1', '错误的邮箱格式']),
-				'loginEmail.between'			=> json_encode(['1', '请填写100个字符以内的邮箱']),
+				'name.required'			=> '请填写您的称呼',
+				'phone.required'		=> '请填写电话',
+				'phone.alpha_dash'		=> '电话格式错误',
+				'phone.between'			=> '电话格式错误',
+				'email.email'			=> '错误的邮箱格式',
+				'email.between'			=> '请填写100个字符以内的邮箱',
 			]
 		);
 
 		if($validator->fails()){
 			$message = $validator->messages()->first();
-			return json_decode($message)[0];
+			Log::error("validator: ".$message);
+			return view('errors.error')->with('message',$message);
 		}
-		*/
-		if(!is_null($request->dev)) {
-			
-			Log::info("name=".$request->name);
-			Log::info("phone=".$request->phone);
-			Log::info("wechat=".$request->wechat);
-			return view('mobile.index')->with('index','home');
-		}
+		
+		
     	switch ($request->from) {
     		case 'user':
     			# code...
     		{
-    			$existUser = User::where('email','=',$request->loginEmail)->get();
+    			$existUser = User::where('email','=',$request->email)->get();
     			if(empty($existUser) || is_null($existUser) || $existUser->count() == 0)
     			{
 	    			$user = new User;
-			    	$user->name = $request->userName;
-			    	$user->email = $request->loginEmail;
-			    	if(is_null($request->password)) {
-	    				$user->password = "123456";
-	    			}else
-			    	$user->password = $request->password;
-			    	$user->wechatid = $request->wechatCode;
-			    	$user->phone = $request->phoneNum;
+			    	$user->name = $request->name;
+			    	$user->email = $request->email;
+			    	$user->wechatid = $request->wechat;
+			    	$user->phone = $request->phone;
 			    	$user->save();
 		    	}else {
 		    		# code...
@@ -74,18 +65,14 @@ class RegisterController extends Controller
     		}
     		case 'corp':
     		{
-    			$existCom = Company::where('email','=',$request->loginEmail)->get();
+    			$existCom = Company::where('email','=',$request->email)->get();
     			if(empty($existCom) || is_null($existCom) || $existCom->count() == 0)
     			{
 	    			$company = new Company;
-	    			$company->email = $request->loginEmail;
-	    			$company->name = $request->userName;
-	    			if(is_null($request->password)) {
-	    				$company->password = "123456";
-	    			}else
-	    				$company->password = $request->password;
-			    	$company->wechatid = $request->wechatCode;
-			    	$company->phone = $request->phoneNum;
+	    			$company->email = $request->email;
+	    			$company->name = $request->name;
+			    	$company->wechatid = $request->wechat;
+			    	$company->phone = $request->phone;
 
 			    	$company->save();
 		    	}
@@ -101,7 +88,14 @@ class RegisterController extends Controller
     			return view('errors.503');
     			
     	}
+    	switch ($request->device) {
+    		case 'pc':
+    			return view('pc.index')->with('index','home');
+    		case 'mobile':
+    			return view('mobile.index')->with('index','home');
+    		default:
+    			return view('pc.index')->with('index','home');
+    	}
     	
-    	return view('pc.index')->with('index','home');
     }
 }

@@ -3,7 +3,7 @@
         <div class="am_footer_link">
             <span>关于"我要跳槽"</span>
             <ul>
-                <li><a href="###">关于我们</a></li>
+                <li><a href="contact">关于我们</a></li>
                 <li><a href="###">发展历程</a></li>
                 <li><a href="###">友情链接</a></li>
             </ul>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="am_info_line">Copyright(c)2014-2016 <span>我要跳槽</span> All Rights Reserved</div>
+    <div class="am_info_line">Copyright(c)2014-2016 <span>我要跳槽</span> All Rights Reserved, 京ICP备16041682号</div>
 </footer>
 <script src="{{asset('/amaze/js/petshow.js')}}"></script>
 <script src="{{asset('/amaze/js/jquery.min.js')}}"></script>

@@ -7,47 +7,38 @@
         </ul>
         <div class="am-tabs-bd">
             <div class="am-tab-panel am-active">
-                <form method="post" class="am-form" data-am-validator="true" action="/register?from=user">
+                <form method="post" class="am-form" data-am-validator="true" action="/register">
                     <div class="am-g">
                         <div class="am-u-sm-12 am-u-md-12 am-form-group">
                             <div class="am-u-sm-12 am-u-md-3 lablel"><em>*</em>邮箱</div>
                             <div class="am-u-sm-12 am-u-md-9">
-                                <input type="email" class="" placeholder="邮箱地址" required="required" name="loginEmail" />
+                                <input type="email" class="" placeholder="邮箱地址" required="required" name="email" />
                             </div>
                         </div>
                         <div class="am-u-sm-12 am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>昵称</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="昵称" required="required" name="userName" />
+                                <input type="text" class="" placeholder="昵称" required="required" name="name" />
                             </div>
                         </div>
-                        <div class="am-u-md-12 am-form-group">
-                            <div class="am-u-md-3 lablel"><em>*</em>密码</div>
-                            <div class="am-u-md-9">
-                                <input type="password" id="doc-vld-pwd-1" class="" placeholder="密码" required="required" name="password" required="required" />
-                            </div>
-                        </div>
-                        <div class="am-u-md-12 am-form-group">
-                            <div class="am-u-md-3 lablel"><em>*</em>确认密码</div>
-                            <div class="am-u-md-9">
-                                <input type="password" class="" placeholder="重复密码" data-equal-to="{id:#doc-vld-pwd-1}" required="required" />
-                            </div>
-                        </div>
+                        
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>手机号码</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="输入手机号码" required="required" name="phoneNum" />
+                                <input type="text" class="" placeholder="输入手机号码" required="required" name="phone" />
                             </div>
                         </div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>微信号码</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="输入微信号码" required="required" name="wechatCode" />
+                                <input type="text" class="" placeholder="输入微信号码" required="required" name="wechat" />
                             </div>
                         </div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel">
                                 <input type="hidden" id="userType" value="0" />
+                                <input type="hidden" id="userType" name="from" value="user" />
+                                <input type="hidden" id="userType" name="device" value="pc" />
                             </div>
                             <div class="am-u-md-9">
                                 <button id="submit" class="am-btn am-btn-success">申请职位</button>
@@ -59,32 +50,21 @@
                 <div class="am-u-md-6">请留下您的联系方式，我们会尽快与您沟通用人需求</div>
             </div>
             <div class="am-tab-panel">
-                <form method="post" class="am-form" data-am-validator="true" action="/register?from=company">
+                <form method="post" class="am-form" data-am-validator="true" action="/register?from=corp&device=pc">
                     <div class="am-u-md-6 am-form">
                         <div class="am-u-md-12"><span class="title">账号信息</span></div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>邮箱</div>
                             <div class="am-u-md-9">
-                                <input type="email" class="" placeholder="邮箱地址" equired="required" name="loginEmail" />
+                                <input type="email" class="" placeholder="邮箱地址" equired="required" name="email" />
                             </div>
                         </div>
-                        <div class="am-u-md-12 am-form-group">
-                            <div class="am-u-md-3 lablel"><em>*</em>密码</div>
-                            <div class="am-u-md-9">
-                                <input type="password" class="" placeholder="密码" required="required" />
-                            </div>
-                        </div>
-                        <div class="am-u-md-12 am-form-group">
-                            <div class="am-u-md-3 lablel"><em>*</em>确认密码</div>
-                            <div class="am-u-md-9">
-                                <input type="password" class="" placeholder="重复密码" />
-                            </div>
-                        </div>
+                        
                         <div class="am-u-md-12"><span class="title">联系人信息</span></div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>联系人</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="联系人名称" equired="required" name="userName" />
+                                <input type="text" class="" placeholder="联系人名称" equired="required" name="name" />
                             </div>
                         </div>
                         <div class="am-u-md-12 am-form-group">
@@ -96,26 +76,26 @@
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>手机号码</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="手机号码" equired="required" name="phoneNum" />
+                                <input type="text" class="" placeholder="手机号码" equired="required" name="phone" />
                             </div>
                         </div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>微信号码</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="输入微信号码" required="required" name="wechatCode" />
+                                <input type="text" class="" placeholder="输入微信号码" required="required" name="wechat" />
                             </div>
                         </div>
                         <div class="am-u-md-12"><span class="title">公司信息</span></div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>公司名称</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="公司名称" equired="required" name="companyName" />
+                                <input type="text" class="" placeholder="公司名称" equired="required" name="company" />
                             </div>
                         </div>
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel"><em>*</em>所在地</div>
                             <div class="am-u-md-9">
-                                <input type="text" class="" placeholder="请填写具体地址" equired="required" name="companyLoc" />
+                                <input type="text" class="" placeholder="请填写具体地址" equired="required" name="location" />
                             </div>
                         </div>
                         <div class="am-u-md-12 am-form-group">
@@ -141,6 +121,8 @@
                         <div class="am-u-md-12 am-form-group">
                             <div class="am-u-md-3 lablel">
                                 <input type="hidden" id="userType" value="0" />
+                                <input type="hidden" id="userType" name="from" value="corp" />
+                                <input type="hidden" id="userType" name="device" value="pc" />
                             </div>
                             <div class="am-u-md-9">
                                 <button id="submit" class="am-btn am-btn-success">申请入驻</button>

@@ -10,8 +10,8 @@
         <div class="am-container">
             <h1 class="am-animation-slide-right">中国首个高端职位推荐平台－“我要跳槽”</h1>
             <h2 class="am-animation-scale-up">寻找牛人</h2>
-            <button type="button" class="am-btn am-btn-secondary am-radius am-animation-slide-bottom">
-                <a href="publish"><b style="color: #ffffff;">发布需求</b></a>
+            <button type="button" class="am-btn am-btn-secondary am-radius am-animation-slide-bottom" onclick="location='publish'">
+                <a href="#"><b style="color: #ffffff;">发布需求</b></a>
             </button>
         </div>
     </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-    @include('pc.footer')
+    
 </body>
-
+@include('pc.footer')
 </html>

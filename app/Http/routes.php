@@ -13,7 +13,7 @@
 //pc for router
 Route::group(['prefix'=>"/"], function () {
 	Route::get('/', function () {
-	    return view('pc.index')->with('index','home');
+	    return view('pc.corps')->with('index','corps');
 	});
 	Route::get('/home', function () {
 	    return view('pc.index')->with('index','home');
@@ -25,7 +25,7 @@ Route::group(['prefix'=>"/"], function () {
 	    return view('pc.corps')->with('index','corps');
 	});
 	Route::get('/apply', function () {
-	    return view('pc.apply')->with('index','apply');
+	    return view('pc.apply')->with('index','apply')->with('type','mobile');
 	});
 	Route::get('/help', function () {
 	    return view('pc.help')->with('index','help');
@@ -39,7 +39,7 @@ Route::group(['prefix'=>"/"], function () {
 	Route::get('/publish', function () {
 	    return view('pc.publish')->with('index','publish');
 	});
-
+	
 	Route::post('/register','RegisterController@regist');
 
 });
@@ -56,7 +56,7 @@ Route::group(['prefix'=>"m"], function () {
 	    return view('mobile.about')->with('index','about');
 	});
 	Route::get('regist', function () {
-	    return view('mobile.register')->with('index','register');
+	    return view('mobile.register')->with('index','register')->with('type','mobile');
 	});
 	Route::post('/register','RegisterController@regist');
 });

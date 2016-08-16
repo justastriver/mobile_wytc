@@ -10,7 +10,7 @@
         <div class="am-container">
             <h1 class="am-animation-slide-right">中国首个高端职位推荐平台－“我要跳槽”</h1>
             <h2 class="am-animation-scale-up">高薪职位</h2>
-            <button type="button" class="am-btn am-btn-secondary am-radius am-animation-slide-bottom">
+            <button type="button" class="am-btn am-btn-secondary am-radius am-animation-slide-bottom" onclick="location='apply'">
                 <a href="apply"><b style="color: #ffffff;">马上跳槽</b></a>
             </button>
         </div>
