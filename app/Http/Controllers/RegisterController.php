@@ -72,7 +72,7 @@ class RegisterController extends Controller
     			break;
 		    
     		}
-    		case 'company':
+    		case 'corp':
     		{
     			$existCom = Company::where('email','=',$request->loginEmail)->get();
     			if(empty($existCom) || is_null($existCom) || $existCom->count() == 0)
