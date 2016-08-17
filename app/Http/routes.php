@@ -57,7 +57,7 @@ Route::group(['prefix'=>"m"], function () {
 	});
 	
 	Route::get('jobs', function () {
-	    return view('mobile.campaign-list')->with('index','about');;
+	    return view('mobile.jobs')->with('index','jobs')->with('title','Jobs List');
 	});
 	
 
