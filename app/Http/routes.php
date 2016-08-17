@@ -76,10 +76,25 @@ Route::group(['prefix'=>"m"], function () {
 });
 Route::group(array('domain' => 'm.woyaotiaocao.com'), function()
 {
-	Route::get('/', function()
-	{
-		return view('mobile.index')->with('index','home');
+	Route::get('/', 'HomeController@index');
+	Route::get('home', 'HomeController@index');
+	Route::get('/', 'HomeController@index');
+	
+	Route::get('article', 'ArticleController@index');
+	
+	Route::get('profile', function () {
+	    return view('mobile.home')->with('title','首页');
 	});
+
+	Route::get('about', function () {
+	    return view('mobile.about')->with('title','关于');
+	});
+	
+	Route::get('jobs', 'JobRecomController@hot');
+	
+	Route::get('/apply','ApplyController@index');
+
+	
 	Route::get('user/{id}', function($id)
 	{
 		

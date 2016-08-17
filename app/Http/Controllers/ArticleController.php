@@ -16,7 +16,7 @@ class ArticleController extends Controller
     	$article = Articles::where('id','=',$request->id)->get();
     	Log::info('article content: '.$article);
     	if(is_null($article) || $article->count() == 0) {
-    		return view('mobile.error')
+    		return view('errors.error')
     				->with('message','页面不存在');
     	}
 
