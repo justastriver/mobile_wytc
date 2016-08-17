@@ -14,7 +14,8 @@ class ArticleController extends Controller
     public function index(Request $request)
     {
     	$article = Articles::where('id','=',$request->id)->get();
-    	Log::info('article content: '.$article);
+
+    	Log::info('article content: '.$request->id.",,,,".$article);
     	if(is_null($article) || $article->count() == 0) {
     		return view('errors.error')
     				->with('message','页面不存在');
