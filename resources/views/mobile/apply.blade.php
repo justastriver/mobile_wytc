@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<!-- saved from url=(0028)http://amazeui.org/showcase/ -->
+<!doctype html>
 <html class="js cssanimations">
-<!--
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>test！</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="alternate icon" type="image/png" href="{{asset('/img/favicon.png')}}">
-    <link rel="stylesheet" href="{{asset('/amaze/css/amazeui.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/amaze/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('/amaze/css/footer.css')}}">
-    <link rel="stylesheet" href="{{asset('/amaze/css/icons.css')}}">
-</head>
--->
 @include('mobile.head')
-    <body class="am-with-topbar-fixed-top">
-    	<section>
-    	<div class="am-u-sm-12" style="background: #000000;" >
-    	@include('mobile.header')
-    	</div>
-    	<!-- banner -->
-    <div class="bgimg bgimg-ext">
-        <div class="am-container">
-            <h1 class="am-animation-slide-right">中国首个高端职位推荐平台－“我要跳槽”</h1>
-            <h2 class="am-animation-scale-up">高薪职位</h2>
-            <button type="button" class="am-btn am-btn-secondary am-radius am-animation-slide-bottom">
-                <a href="apply"><b style="color: #ffffff;">马上跳槽</b></a>
-            </button>
-        </div>
-    </div>
+<body style="background:#ececec">
+	<section>
+		@include('mobile.header')
+	</section>
+	<section>
+		@include('mobile.banner')    
+	</section>
     	</section>
         <section>
             <form method="post" class="am-form" data-am-validator="true" action="/register" onsubmit="return check()">
@@ -42,7 +17,7 @@
                 <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 am-u-lg-end am-u-md-end">
                     <div class="am-panel am-panel-default">
                         <div class="am-panel-hd">
-                        	<h2>填写基本信息，我们会尽快跟您联系</h2>
+                        	<h2>{{$applytitle}}</h2>
                         </div>
                         <div class="am-panel-bd">
                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>

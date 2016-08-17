@@ -47,22 +47,28 @@ Route::group(['prefix'=>"/"], function () {
 //mobile
 Route::group(['prefix'=>"m"], function () {
 	Route::get('/', function () {
-	    return view('mobile.home')->with('index','home');
+	    return view('mobile.home')->with('title','首页');
 	});
 	Route::get('hot', function () {
-	    return view('mobile.hot')->with('index','hot');
+	    return view('mobile.hot')->with('title','热门');
 	});
 	Route::get('about', function () {
-	    return view('mobile.about')->with('index','about');
+	    return view('mobile.about')->with('title','关于');
 	});
 	
-	Route::get('jobs', function () {
-	    return view('mobile.jobs')->with('index','jobs')->with('title','Jobs List');
-	});
+	Route::get('jobs', 'JobRecomController@hot');
 	
-
-	Route::get('/regist', 'RegisterController@index');
-	Route::post('/register','RegisterController@regist');
+	Route::get('/apply','ApplyController@index');
+	/*
+		return view('mobile.apply')->with('title','填写申请材料')->with('type','user');
+	});*/
+	/*
+	Route::get('/corpjoin','ApplyController@index');*/
+		/*function() {
+		return view('mobile.apply')->with('title','企业入驻')->with('type','corp');
+	});*/
+	
+	Route::post('/regist','RegisterController@regist');
 });
 Route::group(array('domain' => 'm.woyaotiaocao.com'), function()
 {

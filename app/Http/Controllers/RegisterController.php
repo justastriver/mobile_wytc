@@ -68,7 +68,7 @@ class RegisterController extends Controller
 	    			$user = new User;
 			    	$user->name = $request->name;
 			    	$user->email = $request->email;
-			    	$user->wechatid = $request->wechat;
+			    	$user->wechat = $request->wechat;
 			    	$user->phone = $request->phone;
 			    	$user->save();
 		    	}else {
@@ -87,7 +87,7 @@ class RegisterController extends Controller
 	    			$company = new Company;
 	    			$company->email = $request->email;
 	    			$company->name = $request->name;
-			    	$company->wechatid = $request->wechat;
+			    	$company->wechat = $request->wechat;
 			    	$company->phone = $request->phone;
 
 			    	$company->save();

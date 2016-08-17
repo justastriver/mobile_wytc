@@ -18,10 +18,14 @@ class CreateCompanyTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password', 60);
-            $table->string('wechatid');
+            $table->string('wechat');
             $table->string('phone');
-            $table->string('companyName');
+            $table->string('company');
+            $table->string('branch');
+            $table->string('logo');
             $table->string('location');
+            $table->string('step');//公司阶段A,B,C...
+            $table->string('staffs');//人数
             $table->rememberToken();
             $table->timestamps();
         });
