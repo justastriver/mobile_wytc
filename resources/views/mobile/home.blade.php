@@ -104,11 +104,11 @@
                                 </div>
                             </div>
                             <div class=" am-u-sm-8 am-list-main pet_list_one_nr">
-                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="m/article?id={{$article->id}}" class="">{{$article->title}}</a></h3>
+                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="article?id={{$article->id}}" class="">{{$article->title}}</a></h3>
                                 <div class="am-list-item-text pet_list_one_text">{{$article->abstract}}…</div>
                             </div>
                             <div class="am-u-sm-4 am-list-thumb">
-                                <a href="m/article?id={{$article->id}}" class="">
+                                <a href="article?id={{$article->id}}" class="">
                                     <img src="{{asset('img/q1.jpg')}}" class="pet_list_one_img" alt="" />
                                 </a>
                             </div>
