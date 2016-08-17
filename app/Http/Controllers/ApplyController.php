@@ -32,8 +32,8 @@ class ApplyController extends Controller
     		default:
     			# code...
     			return view('mobile.apply')
-    					->with('title','填写申请材料')
-    					->with('type','user')
+    					->with('title','企业入驻')
+    					->with('type','corp')
     					->with('applytitle',$title);
     			break;
     	}
