@@ -1,7 +1,7 @@
   <header data-am-widget="header"
           class="am-header am-header-default">
       <div class="am-header-left am-header-nav">
-          <a href="#left-link" class="">
+          <a href="home" class="">
                 <i class="am-header-icon am-icon-home"></i>
           </a>        
       </div>
@@ -9,7 +9,7 @@
           {{$title}}
       </h1>
       <div class="am-header-right am-header-nav">
-          <a href="#user-link" class="">
+          <a href="profile" class="">
 
                 <i class="am-header-icon am-icon-user"></i>
           </a>

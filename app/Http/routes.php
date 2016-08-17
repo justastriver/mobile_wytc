@@ -46,12 +46,16 @@ Route::group(['prefix'=>"/"], function () {
 
 //mobile
 Route::group(['prefix'=>"m"], function () {
-	Route::get('/', function () {
+	Route::get('/', 'HomeController@index');
+	Route::get('home', 'HomeController@index');
+	Route::get('/', 'HomeController@index');
+	
+	Route::get('article', 'ArticleController@index');
+	
+	Route::get('profile', function () {
 	    return view('mobile.home')->with('title','首页');
 	});
-	Route::get('hot', function () {
-	    return view('mobile.hot')->with('title','热门');
-	});
+
 	Route::get('about', function () {
 	    return view('mobile.about')->with('title','关于');
 	});
