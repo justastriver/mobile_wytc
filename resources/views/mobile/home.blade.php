@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="{{asset('amaze/css/amazeui.min.css')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/wap.css?2')}}">
-    <!--<title>我要跳槽－您的跳槽神器，助您快速升职涨薪！</title>-->
-    <title>test</title>
+    <title>我要跳槽－您的跳槽神器，助您快速升职涨薪！</title>
     <meta name="keywords" content="跳槽神器,无需简历,涨薪利器,企业招聘神器,大牛跳槽" />
     <meta name="description" content="我要跳槽－您的跳槽神器，助您快速升职涨薪！" />
     <style type="text/css">
@@ -80,11 +79,11 @@
                                 </div>
                             </div>
                             <div class=" am-u-sm-8 am-list-main pet_list_one_nr">
-                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="article?id=1" class="">十一长假哪也不去，宅在家里看电影！</a></h3>
+                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="m/article?id=1" class="">十一长假哪也不去，宅在家里看电影！</a></h3>
                                 <div class="am-list-item-text pet_list_one_text">每逢长假，总有那么一群人选择远离人山人海，静静地呆在家，坐在电脑电视前。长时间的工作学习让他们感觉很疲惫，对什么都提不起劲，打开电脑却不知道干什么好…</div>
                             </div>
                             <div class="am-u-sm-4 am-list-thumb">
-                                <a href="article?id=1" class="">
+                                <a href="m/article?id=1" class="">
                                     <img src="{{asset('img/q1.jpg')}}" class="pet_list_one_img" alt="" />
                                 </a>
                             </div>
@@ -105,11 +104,11 @@
                                 </div>
                             </div>
                             <div class=" am-u-sm-8 am-list-main pet_list_one_nr">
-                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="article?id={{$article->id}}" class="">{{$article->title}}</a></h3>
+                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="m/article?id={{$article->id}}" class="">{{$article->title}}</a></h3>
                                 <div class="am-list-item-text pet_list_one_text">{{$article->abstract}}…</div>
                             </div>
                             <div class="am-u-sm-4 am-list-thumb">
-                                <a href="article?id={{$article->id}}" class="">
+                                <a href="m/article?id={{$article->id}}" class="">
                                     <img src="{{asset('img/q1.jpg')}}" class="pet_list_one_img" alt="" />
                                 </a>
                             </div>

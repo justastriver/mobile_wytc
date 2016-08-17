@@ -8,7 +8,7 @@
     <meta name="description" content="我要跳槽－您的跳槽神器，助您快速升职涨薪！" />
     <link rel="stylesheet" href="{{asset('amaze/css/amazeui.min.css')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/wap.css')}}">
-    <title>内容页-{{$article->title}}</title>
+    <title>{{$article->title}}</title>
 </head>
 
 <body style="background:#ececec">
