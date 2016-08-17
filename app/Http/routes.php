@@ -11,7 +11,7 @@
 |
 */
 //pc for router
-Route::group(['prefix'=>"/"], function () {
+Route::group(array('domain' => 'www.woyaotiaocao.com'), function()
 	Route::get('/', function () {
 	    return view('pc.corps')->with('index','corps');
 	});
