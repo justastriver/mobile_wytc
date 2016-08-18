@@ -3,10 +3,9 @@
 <html class="js cssanimations">
 @include('mobile.head')
 
-<body class="am-with-topbar-fixed-top">
+<body>
     @include('mobile.header')
-    <!-- banner -->
-    
+
     <div class="about">
         <div class="am-g am-container">
             <div class="am-u-lg-12">

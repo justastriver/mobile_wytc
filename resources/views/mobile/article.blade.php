@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta name="keywords" content="跳槽神器,无需简历,涨薪利器,企业招聘神器,大牛跳槽" />
     <meta name="description" content="我要跳槽－您的跳槽神器，助您快速升职涨薪！" />
+    <link rel="alternate icon" type="image/png" href="{{asset('/img/favicon.png')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/amazeui.min.css')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/wap.css')}}">
     <title>{{$article->title}}</title>
