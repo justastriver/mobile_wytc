@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('amaze/css/amazeui.min.css')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/wap.css?2')}}">
     <title>我要跳槽－您的跳槽神器，助您快速升职涨薪！</title>
-    <meta name="keywords" content="跳槽神器,无需简历,涨薪利器,企业招聘神器,大牛跳槽" />
+    <meta name="keywords" content="我要跳槽,跳槽神器,无需简历,涨薪利器,企业招聘神器,大牛跳槽,人才招聘,高端人才招聘,高端人才跳槽" />
     <meta name="description" content="我要跳槽－您的跳槽神器，助您快速升职涨薪！" />
     <link rel="alternate icon" type="image/png" href="{{asset('/img/favicon.png')}}">
     <!--<link rel="alternate icon" type="image/png" href="http://s.amazeui.org/assets/2.x/i/favicon.png">-->
