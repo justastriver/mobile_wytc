@@ -37,11 +37,11 @@
                     </div>
                     <hr>
                     <div class="am-u-sm-12">
-                        <h3>参考资料</h3>
+                        <h2>媒体报道</h2>
                         <hr>
                         <div>
-                        <a href="http://baike.sogou.com/v152642295.htm">佳职联程管理咨询（北京）有限公司</a>
-                        <a href="http://baike.sogou.com/v152642551.htm">“我要跳槽”的互联网招聘跳槽新产品</a>
+                        <p><a href="http://baike.sogou.com/v152642295.htm">佳职联程管理咨询（北京）有限公司</a></p>
+                        <p><a href="http://baike.sogou.com/v152642551.htm">“我要跳槽”的互联网招聘跳槽新产品</a></p>
                         </div>
                     </div>
                 </div>
