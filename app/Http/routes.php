@@ -11,6 +11,7 @@
 |
 */
 //pc for router
+
 Route::group(array('domain' => 'www.woyaotiaocao.com'), function() {
 	Route::get('/', function () {
 	    return view('pc.corps')->with('index','corps');
@@ -45,36 +46,7 @@ Route::group(array('domain' => 'www.woyaotiaocao.com'), function() {
 });
 
 //mobile
-Route::group(['prefix'=>"m"], function () {
-	Route::get('/', 'HomeController@index');
-	Route::get('home', 'HomeController@index');
-	Route::get('/', 'HomeController@index');
-	
-	Route::get('article', 'ArticleController@index');
-	
-	Route::get('profile', function () {
-	    return view('mobile.home')->with('title','首页');
-	});
-
-	Route::get('about', function () {
-	    return view('mobile.about')->with('title','关于');
-	});
-	
-	Route::get('jobs', 'JobRecomController@hot');
-	
-	Route::get('/apply','ApplyController@index');
-	/*
-		return view('mobile.apply')->with('title','填写申请材料')->with('type','user');
-	});*/
-	/*
-	Route::get('/corpjoin','ApplyController@index');*/
-		/*function() {
-		return view('mobile.apply')->with('title','企业入驻')->with('type','corp');
-	});*/
-	
-	Route::post('/regist','RegisterController@regist');
-});
-Route::group(array('domain' => 'm.woyaotiaocao.com'), function()
+Route::group(['domains' => [['m.woyaotiaocao.com'],['localhost']]], function()
 {
 	Route::get('/', 'HomeController@index');
 	Route::get('home', 'HomeController@index');
@@ -85,7 +57,9 @@ Route::group(array('domain' => 'm.woyaotiaocao.com'), function()
 	Route::get('profile', function () {
 	    return view('mobile.home')->with('title','首页');
 	});
-
+	Route::get('publish', 'PublishController@index');
+	Route::post('publsh', 'PublishController@publsh');
+	
 	Route::get('about', function () {
 	    return view('mobile.about')->with('title','关于');
 	});
