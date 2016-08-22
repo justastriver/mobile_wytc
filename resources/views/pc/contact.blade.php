@@ -36,11 +36,11 @@
                         <p class="about-p">由一批较早从事互联网猎头行业的专业资深猎头顾问组成，具有本科以上多样化的教育背景和成熟的互联网行业咨询工作经验，拥有优质的候选者资源，具有众多的猎头成功案例。行业知识和HR经验丰富，判断候选人时比较准确。</p>
                     
                         <p style="color:#000000;background:#f0f0f0;height:30px;font-size:20px;">媒体报道</p>
+                        
+                        <p><i class="am-icon-link"></i><a href="http://baike.sogou.com/v152642295.htm">佳职联程管理咨询（北京）有限公司简介</a></p>
+                        <p><i class="am-icon-link"></i><a href="http://baike.sogou.com/v152642551.htm">佳职联程推出“我要跳槽”产品，专注互联网高端人才求职招聘</a></p>
+                       
                         <hr>
-                        <div>
-                        <p><a href="http://baike.sogou.com/v152642295.htm">佳职联程管理咨询（北京）有限公司简介</a></p>
-                        <p><a href="http://baike.sogou.com/v152642551.htm">佳职联程推出“我要跳槽”产品，专注互联网高端人才求职招聘</a></p>
-                        </div>
                     </div>
                 </div>
             </div>
