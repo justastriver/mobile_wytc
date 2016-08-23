@@ -29,26 +29,26 @@
         <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false}'>
             <ul class="am-slides">
                 <li>
-                    <img src="{{asset('img/fl01.png')}}">
+                    <img src="{{asset('img/banner_01.png')}}" >
                     <div class="pet_slider_font">
-                        <span class="pet_slider_emoji"> (╭￣3￣)╭♡   </span>
-                        <span>“大白”有望成为现实：充气机器人研究取得进展</span>
+                        <span class="pet_slider_emoji">“我要跳槽”</span>
+                        <span>推荐最适合您的高薪互联网职位</span>
                     </div>
                     <div class="pet_slider_shadow pet_slider_shadow-ext"></div>
                 </li>
                 <li>
-                    <img src="{{asset('img/fl02.png')}}">
+                    <img src="{{asset('img/banner_02.jpg')}}">
                     <div class="pet_slider_font">
-                        <span class="pet_slider_emoji"> []~(￣▽￣)~*　</span>
-                        <span>已然魔性的雪橇犬哈士奇 —《雪地狂奔》</span>
+                        <span class="pet_slider_emoji">你的团队</span>
+                        <span>给你不一样的职场环境</span>
                     </div>
                     <div class="pet_slider_shadow pet_slider_shadow-ext"></div>
                 </li>
                 <li>
-                    <img src="{{asset('img/fl03.png')}}">
+                    <img src="{{asset('img/banner_03.jpg')}}">
                     <div class="pet_slider_font">
-                        <span class="pet_slider_emoji"> (｡・`ω´･)　</span>
-                        <span>《星际争霸2:虚空之遗》国服过审!</span>
+                        <span class="pet_slider_emoji">我们一起</span>
+                        <span>创造最顶尖的企业!</span>
                     </div>
                     <div class="pet_slider_shadow pet_slider_shadow-ext"></div>
                 </li>
@@ -69,30 +69,8 @@
         <div class="pet_content_main">
             <div data-am-widget="list_news" class="am-list-news am-list-news-default">
                 <div class="am-list-news-bd">
-                    <ul class="am-list">
-                        <!--缩略图在标题右边-->
-                        <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-right pet_list_one_block">
-                            <div class="pet_list_one_info">
-                                <div class="pet_list_one_info_l">
-                                    <div class="pet_list_one_info_ico"><img src="{{asset('img/a1.png')}}" alt=""></div>
-                                    <div class="pet_list_one_info_name">Super invincible 菁 </div>
-                                </div>
-                                <div class="pet_list_one_info_r">
-                                    <div class="pet_list_tag pet_list_tag_xxs">新鲜事</div>
-                                </div>
-                            </div>
-                            <div class=" am-u-sm-8 am-list-main pet_list_one_nr">
-                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="m/article?id=1" class="">十一长假哪也不去，宅在家里看电影！</a></h3>
-                                <div class="am-list-item-text pet_list_one_text">每逢长假，总有那么一群人选择远离人山人海，静静地呆在家，坐在电脑电视前。长时间的工作学习让他们感觉很疲惫，对什么都提不起劲，打开电脑却不知道干什么好…</div>
-                            </div>
-                            <div class="am-u-sm-4 am-list-thumb">
-                                <a href="m/article?id=1" class="">
-                                    <img src="{{asset('img/q1.jpg')}}" class="pet_list_one_img" alt="" />
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-
+                    
+                    
                     @foreach($articles as $article)
                     <ul class="am-list">
                         <!--缩略图在标题右边-->

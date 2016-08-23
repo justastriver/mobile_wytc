@@ -48,7 +48,7 @@
 
                     <div class="am-panel am-panel-default">
                         <div class="am-panel-hd">
-                            <h2>填写职位基本信息（JD）</h2>
+                            <h2>填写职位基本信息（JD-1）</h2>
                         </div>
                         <div class="am-panel-bd">
                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
@@ -77,7 +77,7 @@
 
                     <div class="am-panel am-panel-default">
                         <div class="am-panel-hd">
-                            <h2>填写职位附加信息（JD－ext，可不填写）</h2>
+                            <h2>填写职位附加信息（JD-2,可不填写）</h2>
                         </div>
                         <div class="am-panel-bd">
                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>

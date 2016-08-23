@@ -18,7 +18,7 @@ class PublishController extends Controller
     public function index(Request $request)
     {
     	return view('mobile.publish')
-    			->with('title','publish')
+    			->with('title','发布职位')
     			->with('applytitle','职位发布');
     }
     public function publish(Request $request)
