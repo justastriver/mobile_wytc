@@ -16,7 +16,8 @@ class CreateJobsTable extends Migration
 
             $table->increments('id');
             $table->string('title');
-            $table->string('subtitle');
+            $table->string('subtitle');//sub title
+            $table->string('joblevel');//
             $table->integer('corp_id');//company id
             $table->string('location');
             $table->string('endtime');
@@ -25,9 +26,10 @@ class CreateJobsTable extends Migration
             $table->string('experience');
             $table->integer('stars');//1-5
             $table->string('badges');
+            $table->string('email');//contact
             $table->integer('view');
-            $table->string('desc');  
-           
+            $table->text('desc');  
+            $table->integer('status');//0-created, being verify ,1-check ok, publishing, 2-out of time
             $table->timestamps();
         });
     }

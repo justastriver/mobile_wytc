@@ -58,7 +58,7 @@ Route::group(['domains' => [['m.woyaotiaocao.com'],['localhost']]], function()
 	    return view('mobile.home')->with('title','首页');
 	});
 	Route::get('publish', 'PublishController@index');
-	Route::post('publsh', 'PublishController@publsh');
+	Route::post('publish', 'PublishController@publish');
 	
 	Route::get('about', function () {
 	    return view('mobile.about')->with('title','关于');

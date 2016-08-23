@@ -38,28 +38,67 @@
                             </br>
                             
                             <div id="div-corp" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-copyright am-icon-fw"></i></span>
-                                <input type="text" id="corp" name="corp" class="am-form-field" placeholder="企业名称(企业用户选填)">
+                                <input type="text" id="corp" name="corp" class="am-form-field" placeholder="企业名称(建议填写，企业名称)">
                             </div>
                             </br>
                             
 
-                            <div id="div-info" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-info-circle am-icon-fw"></i></span>
-                                <input type="text" id="info" name="info" class="am-form-field" placeholder="备注(选填，如：请在xxx时段联系)">
-                            </div>
                         </div>
                     </div>
 
                     <div class="am-panel am-panel-default">
                         <div class="am-panel-hd">
-                            <h2>填写职位信息（JD）</h2>
+                            <h2>填写职位基本信息（JD）</h2>
                         </div>
                         <div class="am-panel-bd">
                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
-                                <input type="text" id="jobtitle" name="jobtitle" class="am-form-field" placeholder="职位标题">
+                                <input type="text" id="title" name="title" class="am-form-field" placeholder="职位标题（如xxx招聘资深架构师）">
+                            </div>
+                            </br>
+                            <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="subtitle" name="subtitle" class="am-form-field" placeholder="职位副标题（选填）">
+                            </div>
+                            </br>
+                            <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="joblevel" name="joblevel" class="am-form-field" placeholder="职位级别（如百度M－2a）">
+                            </div>
+                            </br>
+                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="location" name="location" class="am-form-field" placeholder="工作地点（如北京朝阳区xxx）">
+                            </div>
+                            </br>
+                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="salary" name="salary" class="am-form-field" placeholder="薪资待遇（填写年薪，如50-100万）">
+                            </div>
+                            </br>
+                             
+                        </div>
+                    </div>
+
+                    <div class="am-panel am-panel-default">
+                        <div class="am-panel-hd">
+                            <h2>填写职位附加信息（JD－ext，可不填写）</h2>
+                        </div>
+                        <div class="am-panel-bd">
+                            <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="education" name="education" class="am-form-field" placeholder="教育背景要求（如：985工程学校，硕士，数学专业）">
+                            </div>
+                            </br>
+                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="experience" name="experience" class="am-form-field" placeholder="工作经验（如：3年以上）">
+                            </div>
+                            </br>
+                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="badges" name="badges" class="am-form-field" placeholder="特色（如：扁平化管理，升职空间大，涨薪幅度大等,空格分割）">
+                            </div>
+                            </br>
+                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="desc" name="desc" class="am-form-field" placeholder="其他（附加信息说明）">
                             </div>
                             </br>
                         </div>
                     </div>
+
                 </div>
                 <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                     <div class="am-u-sm-4  am-u-md-6 am-u-lg-6 lablel">

@@ -9,7 +9,19 @@
 		@include('mobile.banner')    
 	</section>
 	<section>
+	  @if($jobs->count() == 0) 
+	  <div class="am-u-sm-12">
+		  <div class="am-panel am-panel-success">
+		    <div class="am-panel-bd" style="float:center">
+		    	<span>暂时没有合适的职位信息！</span>
+		    	
+			</div>
+			</div>
+		</div>
+	  	
+	  @endif
 	  @foreach($jobs as $job)
+	   @if($job->status == 1)
 	  <div class="am-u-sm-12">
 		  <div class="am-panel am-panel-success">
 		    <div class="am-panel-bd">
@@ -33,7 +45,7 @@
 		                    </div>
 		                    <div class="pet_hd_block_tag">
 		                    	<i class="am-icon-calendar am-icon-fw"></i>
-		                    	<span>{{$job->endtime}}</span>
+		                    	<span>{{$job->created_at}}</span>
 		                    </div>
 		                    <div class="pet_hd_block_tag">
 		                    	<i class="am-icon-cc-visa am-icon-fw" ></i>
@@ -73,6 +85,7 @@
 		  </div>
 		  
 	  </div>
+	  @endif
 	  @endforeach
 
   </section>
