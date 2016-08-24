@@ -4,8 +4,8 @@
             <span>关于"我要跳槽"</span>
             <ul>
                 <li><a href="contact">关于我们</a></li>
-                <li><a href="###">发展历程</a></li>
-                <li><a href="###">友情链接</a></li>
+                <li><a href="contact">发展历程</a></li>
+                <li><a href="http://m.woyaotiaocao.com/">“我要跳槽”移动</a></li>
             </ul>
         </div>
         <div class="am_footer_don">

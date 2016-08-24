@@ -8,7 +8,7 @@
                         <ul>
                             <li><a href="###">关于我们</a></li>
                             <li><a href="###">发展历程</a></li>
-                            <li><a href="###">友情链接</a></li>
+                            <li><a href="http://www.woyaotiaocao.com/">我要跳槽</a></li>
                         </ul>
                     
             </div>
