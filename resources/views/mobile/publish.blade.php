@@ -108,7 +108,7 @@
                     </div>
                     <div class="am-u-sm-8 am-u-md-6 am-u-lg-6">
                     	<div class="am-u-sm-6">
-                        	<button id="submit" class="am-btn am-btn-success">立即申请</button>
+                        	<button id="submit" class="am-btn am-btn-success">立即发布</button>
                         </div>
                         
                         <hr>

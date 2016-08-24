@@ -68,7 +68,15 @@ Route::group(['domains' => [['m.woyaotiaocao.com'],['localhost']]], function()
 	
 	Route::get('/apply','ApplyController@index');
 
-	
+	Route::get('contact', function() {
+		return view('mobile.contact')->with('title', '联系我们');
+	});
+	Route::get('rss', function() {
+		return view('mobile.rss')->with('title', '订阅内容');
+	});
+	Route::get('doc', function() {
+		return view('mobile.doc')->with('title', '使用手册');
+	});
 	Route::get('user/{id}', function($id)
 	{
 		

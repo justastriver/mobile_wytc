@@ -56,12 +56,25 @@
         </div>
         <div class="pet_circle_nav">
             <ul class="pet_circle_nav_list">
+            <li>
+                    <a href="home" class="iconfont pet_nav_zhangzhishi am-icon-newspaper-o"></a><span>最新资讯</span></li>
                 <li>
                     <a href="jobs" class="iconfont pet_nav_xinxianshi am-icon-heart"></a><span>热门职位</span></li>
-                <li>
-                    <a href="home" class="iconfont pet_nav_zhangzhishi am-icon-newspaper-o"></a><span>新闻资讯</span></li>
+                
                 <li>
                     <a href="apply?type=corp" class="iconfont pet_nav_meirong am-icon-users"></a><span>企业入驻</span></li>
+                <li>
+                    <a href="publish" class="iconfont pet_nav_gengduo am-icon-pencil"></a><span>发布职位</span>
+                </li>
+                <li>
+                    <a href="rss" class="iconfont pet_nav_meirong am-icon-rss"></a><span>订阅内容</span>
+                </li>
+                <li>
+                    <a href="doc" class="iconfont pet_nav_meirong am-icon-info"></a><span>使用手册</span>
+                </li>
+                <li>
+                    <a href="contact" class="iconfont pet_nav_yiyuan am-icon-bug"></a><span>联系我们</span>
+                </li>
                 <li>
                     <a href="about" class="iconfont pet_nav_dianpu am-icon-tty"></a><span>关于</span></li>
             </ul>
