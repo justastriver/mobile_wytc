@@ -21,20 +21,21 @@ class DatabaseSeeder extends Seeder
     private function seedJobInc()
     {
         DB::table('jobs')->insert([
-            'title' => "架构师",
-            'subtitle' => "京东京东商城-运营研发部-平台及数据部",
+            'title' => "高级iOS工程师",
+            'subtitle' => "负责美团外卖iOS客户端设计与开发",
             'corp_id' => '1',
-            'location' => '北京亦庄经济开发区科创11街18号院',
+            'location' => '北京望京东路4号院科创大厦4层',
             'endtime' =>'8月24日～10月1日',
-            'salary'  => '40～60万 (年薪)',
+            'salary'  => '20k－40k(月薪)',
             'education' => '本科学历',
-            'experience' => '10年以上工作经验',
-            'skills'  => '有扎实的Java基础',
+            'experience' => '3-5年工作经验',
+            'skills'  => '深入理解 iOS SDK，具有丰富的 Objective-C 或 C/C++ 开发经验',
             'stars' => random_int(1,5),
-            'badges' => '我们是个平台 期待你的到来',
+            'badges' => '期权 待遇好 领导好 发展迅速',
             'view' => random_int(10, 1000),
             'status' => '1',
-            'desc' => '熟悉Linux操作系统、大型数据库和NOSQL，具有分布式、高并发、高负载、高可用性，大数据系统经验者优先',
+            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            'desc' => '深入理解面向对象编程思想，具有较强的设计能力，熟悉网络通信机制及常用数据传输协议，习惯查阅英文资料，如 Apple 官方文档，StackOverflow 等，对于各种工具的使用或制造很有心得',
         ]);
     }
     private function seedUsers()
