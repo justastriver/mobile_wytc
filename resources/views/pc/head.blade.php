@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="alternate icon" type="image/png" href="{{asset('/img/favicon.png')}}">
+    <link rel="alternate icon" type="image/png" href="{{asset('favicon.ico')}}">
     <link rel="stylesheet" href="{{asset('/amaze/css/amazeui.min.css')}}">
     <link rel="stylesheet" href="{{asset('/amaze/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/amaze/css/footer.css')}}">
