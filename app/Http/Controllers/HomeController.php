@@ -13,7 +13,7 @@ class HomeController extends Controller
     //
     public function index()
     {
-    	$articles = Articles::where('id','>','0')->get();
+    	$articles = Articles::all();
     	Log::info('articles of home: '.$articles);
     	return view('mobile.home')
     			->with('title','首页')

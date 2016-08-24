@@ -21,11 +21,11 @@ class CreateArticlesTable extends Migration
             $table->string('abstract');
             $table->string('source');
             $table->string('author_photo');
-            $table->string('content');//
+            $table->mediumText('content');//
             $table->integer('view');
             $table->string('type');
             $table->string('thumbnail');
-            
+            $table->integer('status');
             $table->timestamps();
         });
     }
