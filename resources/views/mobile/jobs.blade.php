@@ -99,11 +99,16 @@
   </section>
   <section>
 
-  	 <div class="am-u-sm-12">
-		  
-		  <span>没有你喜欢的职位？赶快点击此处&nbsp;<a class="am-btn am-btn-danger" href="apply?type=user">智能推荐</a>&nbsp;提交你的信息吧</span>
-		  
-</br>
+  	 <div class="am-g">
+		<div class="am-u-sm-12">
+		  		<span>没有你喜欢的职位？赶快点击此处&nbsp;<a class="am-btn am-btn-danger" href="apply?type=user">智能推荐</a>&nbsp;提交你的信息吧</span>
+		</div>
+		
+		<div class="am-u-sm-12">
+			<p></p>
+			<br>
+			<span></span>
+		</div>
 	</div>
 	
   </section>
