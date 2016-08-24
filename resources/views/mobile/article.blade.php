@@ -9,7 +9,7 @@
     <link rel="alternate icon" type="image/png" href="{{asset('favicon.ico')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/amazeui.min.css')}}">
     <link rel="stylesheet" href="{{asset('amaze/css/wap.css')}}">
-    <title>{{$article->title}}</title>
+    <title>我要跳槽 {{$article->title}}</title>
 </head>
 
 <body style="background:#ececec">
@@ -28,7 +28,7 @@
                     <h1 class="pet_article_title">{{$article->title}}</h1>
                     <div class="pet_article_user_time">发表于：{{$article->pubtime}}</div>
                     <img src="{{$article->thumbnail}}">
-                    {{$article->content}}
+                    {!!$article->content!!}
                 </article>
 
                 <ul class="like_share_block">

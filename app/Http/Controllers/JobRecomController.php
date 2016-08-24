@@ -15,12 +15,12 @@ class JobRecomController extends Controller
     //
     public function hot(Request $request) 
     {
-    	$jobs = Jobs::where('id','>','0')->get();
+    	$jobs = Jobs::limit(10)->orderBy('created_at', 'desc')->get();
     	foreach ($jobs as $job) {
     		$job->view = $job->view + 1;
     		$job->save();
     	}
     	Log::info('jobs: '.$jobs);
-    	return view('mobile.jobs')->with('title','最新高端职位信息')->with('jobs', $jobs);
+    	return view('mobile.jobs')->with('title','最新高端职位')->with('jobs', $jobs);
     }
 }

@@ -15,7 +15,27 @@ class DatabaseSeeder extends Seeder
         //$this->seedUsers();
         //$this->seedCompany();
         //$this->seedJobs();
-        $this->seedArticles();
+        //$this->seedArticles();
+        $this->seedJobInc();
+    }
+    private function seedJobInc()
+    {
+        DB::table('jobs')->insert([
+            'title' => "架构师",
+            'subtitle' => "京东京东商城-运营研发部-平台及数据部",
+            'corp_id' => '1',
+            'location' => '北京亦庄经济开发区科创11街18号院',
+            'endtime' =>'8月24日～10月1日',
+            'salary'  => '40～60万 (年薪)',
+            'education' => '本科学历',
+            'experience' => '10年以上工作经验',
+            'skills'  => '有扎实的Java基础',
+            'stars' => random_int(1,5),
+            'badges' => '我们是个平台 期待你的到来',
+            'view' => random_int(10, 1000),
+            'status' => '1',
+            'desc' => '熟悉Linux操作系统、大型数据库和NOSQL，具有分布式、高并发、高负载、高可用性，大数据系统经验者优先',
+        ]);
     }
     private function seedUsers()
     {

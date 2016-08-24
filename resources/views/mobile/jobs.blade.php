@@ -59,6 +59,14 @@
 		                    	<i class="am-icon-user am-icon-fw"></i>
 		                    	<span>{{$job->experience}}</span>
 		                    </div>
+		                    <div class="pet_hd_block_tag">
+			                    <i class="am-icon-circle-o-notch am-icon-spin"></i>
+			                    <span>{{$job->skills}}</span>
+		                    </div>
+		                    <div class="pet_hd_block_tag">
+		                    	<i class="am-icon-user am-icon-fw"></i>
+		                    	<span>{{$job->desc}}</span>
+		                    </div>
 		                    <div class="pet_hd_block_tag">	
 			                    	<i class="am-icon-star am-icon-fw" style="color:red"></i>
 			                    	<i class="am-icon-star am-icon-fw" style="color:red"></i>

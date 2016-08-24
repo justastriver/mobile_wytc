@@ -71,7 +71,10 @@
                                 <input type="text" id="salary" name="salary" class="am-form-field" placeholder="薪资待遇（填写年薪，如50-100万）">
                             </div>
                             </br>
-                             
+                             <div id="div-name" class="am-input-group am-input-group-primary"><span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+                                <input type="text" id="skills" name="skills" class="am-form-field" placeholder="工作技能（如：java，php，linux等）">
+                            </div>
+                            </br>
                         </div>
                     </div>
 

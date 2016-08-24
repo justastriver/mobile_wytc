@@ -75,6 +75,7 @@ class PublishController extends Controller
 	    	$job->badges = $request->badges;
 	    	$job->desc = $request->desc;
 	    	$job->status = 0;
+	    	$job->skills = $request->skills;
 	    	$job->save();
 
     	}else {
@@ -88,6 +89,7 @@ class PublishController extends Controller
 	    	$job->experience = $request->experience;
 	    	$job->badges = $request->badges;
 	    	$job->desc = $request->desc;
+	    	$job->skills = $request->skills;
 	    	$job->status = 0;
 	    	$job->save();
 

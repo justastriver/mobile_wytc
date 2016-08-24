@@ -13,16 +13,17 @@ class ArticleController extends Controller
     //
     public function index(Request $request)
     {
-    	$article = Articles::where('id','=',$request->id)->get();
+    	$article = Articles::where('id','=',$request->id)->first();
 
     	Log::info('article content: '.$request->id.",,,,".$article);
-    	if(is_null($article) || $article->count() == 0) {
+    	if(is_null($article)) {
     		return view('errors.error')
     				->with('message','页面不存在');
     	}
-
+        $article->view = $article->view + 1;
+        $article->save();
     	return view('mobile.article')
-    			->with('title','内容页面')
-    			->with('article', $article[0]);
+    			->with('title','我要跳槽 '.$article->title)
+    			->with('article', $article);
     }
 }

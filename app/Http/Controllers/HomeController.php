@@ -13,7 +13,8 @@ class HomeController extends Controller
     //
     public function index()
     {
-    	$articles = Articles::all();
+    	$articles = Articles::limit(10)->orderBy('created_at', 'desc')->get();
+
     	Log::info('articles of home: '.$articles);
     	return view('mobile.home')
     			->with('title','首页')
